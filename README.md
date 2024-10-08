@@ -28,42 +28,109 @@ classification tasks.
 
 ## 🔥Update
 
-
-- ✅ **YOLOv8-n (person) trained on WIDERPedestrian [03.03]** 
-- ✅ **YOLOv8-m (face) trained on WIDERFace [23.10]** 
-- ✅ **YOLOv8-l (face) trained on WIDERFace [23.10]** 
+- ✅ **YOLOv11-n (face) trained on WIDERFace [08.10]** 
+- ✅ **YOLOv11-s (face) trained on WIDERFace [08.10]**
 
 ## Installation
 
 ``` shell
 # clone repo
-git clone https://github.com/akanametov/yolov8-face
+git clone https://github.com/akanametov/yolo-face
 
 # pip install required packages
 pip install ultralytics
 
 # go to code folder
-cd yolov8-face
+cd yolo-face
 ```
 
 ## Trained models
 
-[`yolov8n-face.pt`](https://github.com/akanametov/yolov8-face/releases/download/v0.0.0/yolov8n-face.pt)
-[`yolov8m-face.pt`](https://github.com/akanametov/yolov8-face/releases/download/v0.0.0/yolov8m-face.pt)
-[`yolov8l-face.pt`](https://github.com/akanametov/yolov8-face/releases/download/v0.0.0/yolov8l-face.pt)
+[`yolov11n-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov11n-face.pt)
+[`yolov11s-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov11s-face.pt)
 
-[`yolov8n-person.pt`](https://github.com/akanametov/yolov8-face/releases/download/v0.0.0/yolov8n-person.pt)
+[`yolov8n-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8n-face.pt)
+[`yolov8m-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8m-face.pt)
+[`yolov8l-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8l-face.pt)
 
-[`yolov8n-football.pt`](https://github.com/akanametov/yolov8-face/releases/download/v0.0.0/yolov8n-football.pt)
-[`yolov8m-football.pt`](https://github.com/akanametov/yolov8-face/releases/download/v0.0.0/yolov8m-football.pt)
+[`yolov8n-person.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8n-person.pt)
 
-[`yolov8n-parking.pt`](https://github.com/akanametov/yolov8-face/releases/download/v0.0.0/yolov8n-parking.pt)
-[`yolov8m-parking.pt`](https://github.com/akanametov/yolov8-face/releases/download/v0.0.0/yolov8m-parking.pt)
+[`yolov8n-football.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8n-football.pt)
+[`yolov8m-football.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8m-football.pt)
 
-[`yolov8n-drone.pt`](https://github.com/akanametov/yolov8-face/releases/download/v0.0.0/yolov8n-drone.pt)
-[`yolov8m-drone.pt`](https://github.com/akanametov/yolov8-face/releases/download/v0.0.0/yolov8m-drone.pt)
+[`yolov8n-parking.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8n-parking.pt)
+[`yolov8m-parking.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8m-parking.pt)
+
+[`yolov8n-drone.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8n-drone.pt)
+[`yolov8m-drone.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8m-drone.pt)
 
 </details>
+
+# YOLOv11-face
+
+## Inference
+
+On image:
+
+```shell
+yolo task=detect mode=predict model=yolov11n-face.pt conf=0.25 imgsz=1280 line_thickness=1 max_det=1000 source=examples/face.jpg
+```
+
+<div align="center">
+    <a href="./">
+        <img src="./results/yolov11n_widerface/face.jpg" width="90%"/>
+    </a>
+</div>
+
+## Results
+
+PR curve:
+<div align="center">
+    <a href="./">
+        <img src="./results/yolov11n_widerface/P_curve.png" width="30%"/>
+    </a>
+    <a href="./">
+        <img src="./results/yolov11n_widerface/PR_curve.png" width="30%"/>
+    </a>
+    <a href="./">
+        <img src="./results/yolov11n_widerface/R_curve.png" width="30%"/>
+    </a>
+</div>
+
+Losses and mAP:
+<div align="center">
+    <a href="./">
+        <img src="./results/yolov11n_widerface/results.png" width="80%"/>
+    </a>
+</div>
+
+Confusion matrix:
+<div align="center">
+    <a href="./">
+        <img src="./results/yolov11n_widerface/confusion_matrix.png" width="70%"/>
+    </a>
+</div>
+
+## Training
+
+Data preparation
+
+* Download [dataset](http://shuoyang1213.me/WIDERFACE/):
+
+* Download pretrained [yolo11n.pt](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt) model.
+
+Single GPU training
+
+``` shell
+# train model
+yolo task=detect \
+mode=train \
+model=yolo11n.pt \
+data=datasets/data.yaml \
+epochs=100 \
+batch=32 \
+imgsz=640
+```
 
 # YOLOv8-face
 
