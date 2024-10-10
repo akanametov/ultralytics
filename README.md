@@ -46,7 +46,7 @@ pip install ultralytics
 cd yolo-face
 ```
 
-## Models
+# Models
 
 [`yolov11n-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov11n-face.pt)
 [`yolov11s-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov11s-face.pt)
