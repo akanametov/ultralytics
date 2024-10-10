@@ -32,6 +32,7 @@ classification tasks.
 - ✅ **YOLOv11-s (face) trained on WIDERFace [08.10]**
 - ✅ **YOLOv11-m (face) trained on WIDERFace [09.10]**
 - ✅ **YOLOv10-n (face) trained on WIDERFace [10.10]**
+- ✅ **YOLOv10-s (face) trained on WIDERFace [10.10]**
 
 ## Installation
 
@@ -53,6 +54,7 @@ cd yolo-face
 [`yolov11m-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov11m-face.pt)
 
 [`yolov10n-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov10n-face.pt)
+[`yolov10s-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov10s-face.pt)
 
 [`yolov8n-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8n-face.pt)
 [`yolov8m-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8m-face.pt)
