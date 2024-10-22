@@ -73,6 +73,20 @@ cd yolo-face
 [`yolov8n-drone.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8n-drone.pt)
 [`yolov8m-drone.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8m-drone.pt)
 
+# ONNX models
+
+[`yolov11n-face.onnx`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov11n-face.onnx)
+[`yolov10n-face.onnx`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov10n-face.onnx)
+[`yolov8n-face.onnx`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8n-face.onnx)
+
+To convert models to `.onnx` format:
+```
+# Install ultralytics
+pip install ultralytics
+# Convert with command
+yolo export model=yolov10n-face.pt format=onnx
+```
+
 </details>
 
 # YOLOv11-face
