@@ -62,6 +62,9 @@ cd yolo-face
 [`yolov8m-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8m-face.pt)
 [`yolov8l-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8l-face.pt)
 
+[`yolov6n-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov6n-face.pt)
+[`yolov6m-face.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov6m-face.pt)
+
 [`yolov8n-person.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8n-person.pt)
 
 [`yolov8n-football.pt`](https://github.com/akanametov/yolo-face/releases/download/v0.0.0/yolov8n-football.pt)
