@@ -480,6 +480,10 @@ imgsz=640
 
 [`yolov8m.pt`](https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt)
 
+## 🌟Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=akanametov/yolo-face&type=Date)](https://star-history.com/#akanametov/yolo-face)
+
 ## <div align="center">License</div>
 
 YOLOv8 is available under two different licenses:
