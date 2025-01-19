@@ -31,6 +31,10 @@ classification tasks.
 - ✅ **YOLOv11-l (face) trained on WIDERFace [01.25]** 
 - ✅ **YOLOv10-l (face) trained on WIDERFace [01.25]**
 
+## 🌟Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=akanametov/yolo-face&type=Date)](https://star-history.com/#akanametov/yolo-face)
+
 ## Installation
 
 ``` shell
@@ -479,10 +483,6 @@ imgsz=640
 [`yolov8n.pt`](https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8m.pt)
 
 [`yolov8m.pt`](https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt)
-
-## 🌟Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=akanametov/yolo-face&type=Date)](https://star-history.com/#akanametov/yolo-face)
 
 ## <div align="center">License</div>
 
